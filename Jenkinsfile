@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build Jar') {
       steps {
-        sh '''mvn -v
+        sh '''brew install maven
+mvn -v
 sudo -S <<< fenris apt-get install maven
 chmod +x mvnw
 ./mvnw package
