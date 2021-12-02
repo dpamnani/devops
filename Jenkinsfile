@@ -3,9 +3,10 @@ pipeline {
   stages {
     stage('Build Jar') {
       steps {
-        sh '''brew install maven
+        sh '''sudo -S <<< fenris
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"brew install maven
 mvn -v
-sudo -S <<< fenris apt-get install maven
+apt-get install maven
 chmod +x mvnw
 ./mvnw package
 '''
