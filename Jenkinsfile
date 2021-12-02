@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build Jar') {
       steps {
-        sh 'mvn package'
+        sh '''cd spring-petclinic-main
+mvn package'''
         stash 'Target'
       }
     }
