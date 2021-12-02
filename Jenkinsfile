@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build Jar') {
       steps {
-        sh '''sudo -S ferris 
+        sh '''sudo -S \\
+fenris 
 ./mvnw package'''
         stash 'Target'
       }
