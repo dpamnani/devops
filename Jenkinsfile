@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build Jar') {
       steps {
-        sh './mvnw package'
+        sh 'sudo ./mvnw package'
         stash 'Target'
       }
     }
