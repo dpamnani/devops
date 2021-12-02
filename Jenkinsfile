@@ -9,5 +9,11 @@ pipeline {
       }
     }
 
+    stage('Execute .jar') {
+      steps {
+        unstash 'Target'
+      }
+    }
+
   }
 }
