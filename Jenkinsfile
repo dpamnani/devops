@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build jar') {
       steps {
-        sh 'mvn package'
+        sh '''ls
+mvn package'''
       }
     }
 
