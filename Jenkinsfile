@@ -4,6 +4,7 @@ pipeline {
     stage('build jar') {
       steps {
         sh '''ls
+pwd
 mvn package -e'''
       }
     }
