@@ -4,7 +4,7 @@ pipeline {
     stage('build jar') {
       steps {
         sh '''ls
-./mvnw package'''
+mvn package'''
       }
     }
 
